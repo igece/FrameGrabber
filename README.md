@@ -34,7 +34,16 @@ class Program
 		while (var frame = frameGrabber.DecodeNextFrame())
 		{
 			// Process the frame (e.g., save it, display it, etc.)
-			File.WriteAllBytes($"frame_{DateTime.Now:yyyyMMdd_HHmmss}.jpg", frame.Data);						
+			
+			using (var bitmap = new Bitmap(width, height, PixelFormat.Format32bppRgb))
+			{
+				var rect = new Rectangle(0, 0, width, height);
+				var bmpData = bitmap.LockBits(rect, ImageLockMode.WriteOnly, bitmap.PixelFormat);
+				System.Runtime.InteropServices.Marshal.Copy(rgb32Data, 0, bmpData.Scan0, rgb32Data.Length);
+
+				bitmap.UnlockBits(bmpData);
+				bitmap.Save($"frame_{DateTime.Now:yyyyMMdd_HHmmss}.jpg", ImageFormat.Jpeg);
+			}			
 		}
 	}
 }
