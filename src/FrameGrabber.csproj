@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0;net8.0</TargetFrameworks>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>     
+    <RootNamespace>FrameGrabber</RootNamespace>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Israel Gómez de Celis González</Authors>
+    <Company>igece.labs</Company>
+    <PackageProjectUrl>https://github.com/igece/FrameGrabber</PackageProjectUrl>
+    <Copyright>Copyright (c) 2025 Israel Gómez de Celis González</Copyright>
+    <PackageTags>ffmpeg;rtsp;h264;jpeg;frame;picture;grabber</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <AssemblyVersion>0.5.0</AssemblyVersion>
+    <Version>0.5.0</Version>
+    <FileVersion>0.5.0</FileVersion>
+    <Description>Library to extract RTSP video frames as images.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FFmpeg.AutoGen" Version="6.0.0" />
+    <PackageReference Include="FFmpeg.Loader" Version="3.0.2" />
+  </ItemGroup>
+
+</Project>
