@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace FrameGrabber.Exceptions
+namespace RtspFrameGrabber.Exceptions
 {
     public class FFmpegException : Exception
     {

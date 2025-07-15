@@ -1,4 +1,4 @@
-# FrameGrabber
+# RtspFrameGrabber
 
 .NET library to extract video frames from a RTSP stream.
 
@@ -8,16 +8,16 @@ Makes use of the FFmpeg libraries and [FFmpeg.AutoGen](shttps://github.com/Rusla
 
 ## Usage
 
-To use the FrameGrabber library, you need to install the NuGet package:
+To use the RtspFrameGrabber library, you need to install the NuGet package:
 
 ```bash
-dotnet add package FrameGrabber
+dotnet add package RtspFrameGrabber
 ```
 
-Then, you can use the `FrameGrabber` class to extract frames from a RTSP stream:
+Then, you can use the `RtspVideoFrameGrabber` class to extract frames from a RTSP stream:
 
 ```csharp
-using FrameGrabber;
+using RtspFrameGrabber;
 using System;
 using System.Threading.Tasks;
 

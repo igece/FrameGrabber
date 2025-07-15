@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace FrameGrabber.Video
+namespace RtspFrameGrabber.Video
 {
     public class Rgb32Frame
     {

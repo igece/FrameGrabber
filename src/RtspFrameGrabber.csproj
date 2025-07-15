@@ -3,13 +3,13 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net6.0;net8.0</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>     
-    <RootNamespace>FrameGrabber</RootNamespace>
+    <RootNamespace>RtspFrameGrabber</RootNamespace>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Israel Gómez de Celis González</Authors>
     <Company>igece.labs</Company>
-    <PackageProjectUrl>https://github.com/igece/FrameGrabber</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/igece/RtspFrameGrabber</PackageProjectUrl>
     <Copyright>Copyright (c) 2025 Israel Gómez de Celis González</Copyright>
     <PackageTags>ffmpeg;rtsp;h264;jpeg;frame;picture;grabber</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -17,9 +17,14 @@
     <Version>0.5.0</Version>
     <FileVersion>0.5.0</FileVersion>
     <Description>Library to extract RTSP video frames as images.</Description>
+    <RepositoryUrl>https://github.com/igece/RtspFrameGrabber</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

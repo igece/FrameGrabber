@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 using FFmpeg.AutoGen;
 
 
-namespace FrameGrabber.Utils
+namespace RtspFrameGrabber.Utils
 {
     public class FFmpegLogger
     {

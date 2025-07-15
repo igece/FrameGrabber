@@ -9,11 +9,11 @@ using System.Runtime.InteropServices;
 
 using FFmpeg.AutoGen;
 
-using FrameGrabber.Exceptions;
-using FrameGrabber.Extensions;
+using RtspFrameGrabber.Exceptions;
+using RtspFrameGrabber.Extensions;
 
 
-namespace FrameGrabber.Video
+namespace RtspFrameGrabber.Video
 {
     public sealed unsafe class RtspVideoFrameGrabber : IDisposable
     {

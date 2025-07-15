@@ -8,10 +8,10 @@ using System.Runtime.InteropServices;
 
 using FFmpeg.AutoGen;
 
-using FrameGrabber.Exceptions;
+using RtspFrameGrabber.Exceptions;
 
 
-namespace FrameGrabber.Extensions
+namespace RtspFrameGrabber.Extensions
 {
     internal static class Extensions
     {
